@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  role_name: nginx
+  author: Ahmed
+  description: Install and configure Nginx
+  company: Example
+  license: MIT
+  min_ansible_version: "2.14"
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - jammy
+        - focal
+
+dependencies:
