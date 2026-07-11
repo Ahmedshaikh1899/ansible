@@ -1,2 +1,5 @@
 ---
-# defaults file for apache2
+package_name: nginx
+service_name: nginx
+listen_port: 80
+document_root: /var/www/html
