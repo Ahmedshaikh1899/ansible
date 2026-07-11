@@ -1,6 +1,6 @@
 ---
 - name: Install Apache
-  yum:
+  apt:
     name: apache2
     state: present
 - name: Start and enable Apache service
