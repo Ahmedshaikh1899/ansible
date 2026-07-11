@@ -1,2 +1,4 @@
 ---
-# vars file for apache2
+apache_user: www-data
+apache_group: www-data
+apache_conf: /etc/apache2/apache2.conf

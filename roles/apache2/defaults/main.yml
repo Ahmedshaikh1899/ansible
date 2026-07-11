@@ -1,2 +1,5 @@
 ---
-# defaults file for apache2
+package_name: apache2
+service_name: apache2
+listen_port: 80
+document_root: /var/www/html
