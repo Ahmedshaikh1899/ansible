@@ -1,2 +1,4 @@
 ---
-# vars file for apache2
+apache_user: apache
+apache_group: apache
+apache_conf: /etc/httpd/conf/httpd.conf
