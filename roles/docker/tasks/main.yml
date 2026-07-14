@@ -1,0 +1,30 @@
+---
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install Docker
+  apt:
+    name: "{{ docker_package }}"
+    state: present
+
+- name: Start Docker service
+  service:
+    name: "{{ docker_service }}"
+    state: started
+    enabled: yes
+
+- name: Add sysadmin user to docker group
+  user:
+    name: sysadmin
+    groups: "{{ docker_group }}"
+    append: yes
+
+- name: Verify Docker installation
+  command: docker --version
+  register: docker_version
+  changed_when: false
+
+- name: Display Docker version
+  debug:
+    var: docker_version.stdout

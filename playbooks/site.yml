@@ -1,0 +1,21 @@
+---
+- hosts: webservers
+  become: yes
+
+  roles:
+
+    - role: apache
+      tags:
+        - apache
+
+    - role: nginx
+      tags:
+        - nginx
+
+    - role: tomcat
+      tags:
+        - tomcat
+
+    - role: docker
+      tags:
+        - docker
