@@ -3,7 +3,7 @@
   become: yes
   roles:
 
-    - role: apache
+    - role: apache2
       tags:
         - apache
 
