@@ -11,10 +11,6 @@
       tags:
         - nginx
 
-    - role: tomcat
-      tags:
-        - tomcat
-
     - role: docker
       tags:
         - docker
