@@ -7,7 +7,7 @@
 
 - name: Install default-jdk
   apt:
-    name: "{{default-jdk}}"
+    name: "{{java_defaults}}"
     state: present
 
 - name: Install Tomcat
