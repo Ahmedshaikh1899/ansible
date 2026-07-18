@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: Ahmed Shaikh
+  description: Install and Configure Apache Tomcat
+  company: Lab
+  license: MIT
+
+  min_ansible_version: "2.15"
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - jammy
+
+dependencies: []

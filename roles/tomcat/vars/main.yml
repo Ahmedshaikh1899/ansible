@@ -1,0 +1,6 @@
+---
+supported_os:
+  - Ubuntu
+  - Debian
+
+minimum_java_version: 17

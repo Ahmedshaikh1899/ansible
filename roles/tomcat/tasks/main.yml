@@ -1,0 +1,17 @@
+---
+- name: Install Java
+  apt:
+    name: "{{ java_package }}"
+    state: present
+    update_cache: yes
+
+- name: Install Tomcat
+  apt:
+    name: "{{ tomcat_package }}"
+    state: present
+
+- name: Enable and Start Tomcat
+  service:
+    name: "{{ tomcat_service }}"
+    state: "{{ tomcat_state }}"
+    enabled: "{{ tomcat_enable }}"
