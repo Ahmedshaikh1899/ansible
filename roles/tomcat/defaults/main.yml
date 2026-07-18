@@ -1,14 +1,14 @@
 ---
 java_package: openjdk-17-jdk
 
-tomcat_package: tomcat10
-tomcat_service: tomcat10
+tomcat_package: tomcat
+tomcat_service: tomcat
 tomcat_port: 8080
 tomcat_enable: true
 tomcat_state: started
 
-tomcat_home: /var/lib/tomcat10
-tomcat_conf: /etc/tomcat10
+tomcat_home: /var/lib/tomcat
+tomcat_conf: /etc/tomcat
 
 tomcat_user: tomcat
 tomcat_group: tomcat
