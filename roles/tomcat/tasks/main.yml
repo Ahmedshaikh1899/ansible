@@ -5,6 +5,11 @@
     state: present
     update_cache: yes
 
+- name: Install default-jdk
+  apt:
+    name: "{{default-jdk}}"
+    state: present
+
 - name: Install Tomcat
   apt:
     name: "{{ tomcat_package }}"
